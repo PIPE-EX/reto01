@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <font face="Bookman Old Style, Times New Roman">
+    <form class="datos">
+      <H1 class="ppal">Calculadora de propinas</H1>
+      <br>
+      <label class="titulos">Total de la cuenta</label>
+      <input class="cobro" type="text" id="cuenta" required>
+      <br>
+      <label class="titulos">Propina (0% - 100%)</label>
+      <input class="cobro" type="text" id="propina" required>
+      <br>
+      <div class="boton">
+        <button class="calculo" type="button" onclick="PagoCuenta()">
+          Calcular</button>
+      </div>
+    </form>
+    <br>
+    <div class="error"><label id="error"></label></div>
+    <br>
+    <div class="resumen">
+      <h1>Resumen</h1>
+      <div class="pago">
+        <p>Total de la cuenta:</p>
+        <input class="dinero" type="text" id="pay" placeholder="0">
+      </div>
+      <div class="pago">
+        <p>Total de propina:</p>
+        <input class="dinero" type="text" id="propi" placeholder="0">
+      </div>
+      <div class="pago">
+        <p>Total a pagar:</p>
+        <input class="dinero" type="text" id="costo" placeholder="0">
+      </div>
+    </div>
+    </font>
+    <script src="/propinas/script.js"></script>
+</body>
+</html>
